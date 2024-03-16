@@ -12,6 +12,8 @@ pip install NAME_OF_PROJECT
 Run tests:
 
 ```
+# first create a virtual environment
+source .venv/bin/activate
 make lint
 make test
 ```
@@ -33,6 +35,7 @@ You can publish the project to PyPI in two ways:
 
 ### Method 1: Via Github Actions
 
+- On Github, set secrets.PYPI_API_TOKEN
 - Update version number in pyproject.toml
 - Merge to main (via PR, direct push to main or other way)
 - Create new release on Github
